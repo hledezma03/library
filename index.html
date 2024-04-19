@@ -9,24 +9,29 @@
 <body>
     <div class="page-title">Library</div>
     <dialog>
-        <button autofocus>Close</button>
         <form action="">
+            <h1>Book</h1>
             <p class="book-title">
-                <label for="title">Title: </label>
+                <label for="title">Title</label>
                 <input type="text" id="title">
             </p>
             <p class="book-author">
-                <label for="author">Author: </label>
+                <label for="author">Author</label>
                 <input type="text" id="author">
             </p>
             <p class="book-pages">
-                <label for="pages">Number of pages: </label>
+                <label for="pages">Number of pages</label>
                 <input type="number" id="pages">
             </p>
-            <input type="submit" value="Confirm">
+            <p class="read-book">
+                <label for="is-read" class="isRead">Is read?</label>
+                <input type="checkbox" id="is-read">
+            </p>
+            <button autofocus class="close-dialog">Close</button>
+            <button type="submit" class="submit-dialog">Confirm</button>
         </form>
-      </dialog>
-      <div class="books-container">
+    </dialog>
+    <div class="books-container">
         <div class="book">
             <div class="delete-button-container">
                 <button class="delete-book">X</button>
@@ -38,41 +43,8 @@
                 <button class="read">Read</button>
             </div>
         </div>
-        <div class="book">
-            <div class="delete-button-container">
-                <button class="delete-book">X</button>
-            </div>
-            <div class="info-container">
-                <h1 class="book-title-show">4 Hours Week</h1>
-                <p class="book-author-show">Tim Ferris</p>
-                <p class="pages-show">284 pages</p>
-                <button class="read">Read</button>
-            </div>
-        </div>
-        <div class="book">
-            <div class="delete-button-container">
-                <button class="delete-book">X</button>
-            </div>
-            <div class="info-container">
-                <h1 class="book-title-show">4 Hours Week</h1>
-                <p class="book-author-show">Tim Ferris</p>
-                <p class="pages-show">284 pages</p>
-                <button class="read">Read</button>
-            </div>
-        </div>
-        <div class="book">
-            <div class="delete-button-container">
-                <button class="delete-book">X</button>
-            </div>
-            <div class="info-container">
-                <h1 class="book-title-show">4 Hours Week</h1>
-                <p class="book-author-show">Tim Ferris</p>
-                <p class="pages-show">284 pages</p>
-                <button class="read">Read</button>
-            </div>
-        </div>
-      </div>
-      <button id="add-book">Add a book</button>
+    </div>
+    <button id="add-book">Add a book</button>
     <script src="script.js"></script>
 </body>
 </html>

@@ -23,14 +23,13 @@ const player1 = new Player('Steve','X');
 const player2 = new Player('Mike', 'O');
 
 
-// const dialog = document.querySelector("dialog");
-// const showButton = document.querySelector("dialog + button");
-// const closeButton = document.querySelector("dialog button");
+const dialog = document.querySelector("dialog");
+const addBook = document.querySelector("#add-book");
 
-// // "Show the dialog" button opens the dialog modally
-// showButton.addEventListener("click", () => {
-//   dialog.showModal();
-// });
+// "Show the dialog" button opens the dialog modally
+addBook.addEventListener("click", () => {
+  dialog.showModal();
+})
 
 // // "Close" button closes the dialog
 // closeButton.addEventListener("click", () => {

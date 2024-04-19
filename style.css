@@ -52,6 +52,7 @@ body {
 }
 
 h1 {
+    text-align: center;
     margin-top: 24px;
 }
 
@@ -83,4 +84,57 @@ button {
     max-width: 100%;
     width: 100%;
     padding: 4px 1rem;
+}
+
+
+
+.close-dialog {
+    background-color: red;
+    border: none;
+    padding: 2px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+dialog {
+    position: relative;
+    padding: 0 1rem 1rem 1rem;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.submit-dialog {
+    background-color: green;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 2px 8px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input{
+    width: 300px;
+    height: 18px;
+}
+
+.isRead {
+    text-align: center;
+}
+
+form > p {
+    display: flex;
+    flex-direction: column;
 }
