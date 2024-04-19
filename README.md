@@ -1,1 +1,2 @@
+This librery it's going to let the user add books and show all the books on the display, also you can mark the books as read or unread when you want and you cna delete a book pressing a button
 # library
