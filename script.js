@@ -38,7 +38,7 @@ function displayBooks() {
       <div class="info-container">
         <h2 class="book-title-show">${book.title}</h2>
         <p class="book-author-show">${book.author}</p>
-        <p class="pages-show">${book.pages}</p>
+        <p class="pages-show">${book.pages} pages</p>
         <button class="read" style="background-color: ${book.isRead ? 'green' : 'red'}">${book.isRead ? 'Read' : 'Not Read'}</button>
       </div>
     `;
@@ -63,7 +63,8 @@ addBook.addEventListener('click', () => {
 });
 
 //Close form to add book
-closeForm.addEventListener('click', () => {
+closeForm.addEventListener('click', (e) => {
+  e.preventDefault();
   dialog.close();
 });
 
