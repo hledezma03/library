@@ -9,7 +9,7 @@
 <body>
     <div class="page-title">Library</div>
     <dialog>
-        <form action="">
+        <form>
             <h1>Book</h1>
             <p class="book-title">
                 <label for="title">Title</label>
@@ -24,25 +24,15 @@
                 <input type="number" id="pages">
             </p>
             <p class="read-book">
-                <label for="is-read" class="isRead">Is read?</label>
-                <input type="checkbox" id="is-read">
+                <label for="isRead" class="isRead">Is read?</label>
+                <input type="checkbox" id="isRead">
             </p>
             <button autofocus class="close-dialog">Close</button>
-            <button type="submit" class="submit-dialog">Confirm</button>
+            <button type="submit" id="submit" class="submit-dialog">Confirm</button>
         </form>
     </dialog>
-    <div class="books-container">
-        <div class="book">
-            <div class="delete-button-container">
-                <button class="delete-book">X</button>
-            </div>
-            <div class="info-container">
-                <h1 class="book-title-show">4 Hours Week</h1>
-                <p class="book-author-show">Tim Ferris</p>
-                <p class="pages-show">284 pages</p>
-                <button class="read">Read</button>
-            </div>
-        </div>
+    <div id="books-container">
+        
     </div>
     <button id="add-book">Add a book</button>
     <script src="script.js"></script>

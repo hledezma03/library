@@ -30,10 +30,10 @@ body {
     margin: 1rem;
 }
 
-.books-container {
+#books-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 200px;
     gap: 15px;
     padding: 2rem;
 }
@@ -51,7 +51,7 @@ body {
     line-height: 12px;
 }
 
-h1 {
+h2 {
     text-align: center;
     margin-top: 24px;
 }
